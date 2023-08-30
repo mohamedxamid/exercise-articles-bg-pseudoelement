@@ -269,3 +269,43 @@ only screen and (                min-resolution: 2dppx) {
         background-image: url(../images/nature@2x.jpg)
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    .latest-videos-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .item-latest-videos {
+        flex-direction: column;
+    }
+
+    .item-latest-videos-img {
+        margin-bottom: 16px;
+    }
+
+    .item-latest-videos-info {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .global-wrapper {
+        flex-direction: column;
+    }
+
+    .hero {
+        max-width: 100%;
+        height: 500px;
+        background-position: center bottom;
+    }
+
+    .latest-videos {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .latest-videos {
+        padding: 24px;
+    }
+}
